@@ -9,10 +9,10 @@ module.exports = {
     },
     extend: {
       colors:{
-        Beige: '#DCC1AB',
-        Black: '#111111',
-        Green: '#1B5B31',
-        Grey: '#F5F0EC'
+        beige: '#DCC1AB',
+        black: '#111111',
+        green: '#1B5B31',
+        gray: '#F5F0EC'
 
       }
     },

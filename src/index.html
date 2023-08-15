@@ -7,16 +7,51 @@
     <title>Giard Design</title>
   </head>
   <body>
-    <nav class="relative flex justify-between container mx-auto bg-red-300 py-6">
+    <nav class="relative flex justify-between container mx-auto py-6">
       <img src="img/giarddesign-logo.svg" alt="Giard Design Logo" />
-      <div class="nav-links-container gap-12">
-        <a href="#">Oferta</a>
-        <a href="#">O firmie</a>
-        <a href="#">Realizacje</a>
-        <a href="#">Kontakt</a>
-        <a href="#">O</a>
-        
+      <div class="nav-links-container gap-12 hidden md:flex">
+        <div class="relative inline-block">
+          <a
+            href="#"
+            class="dropdown-toggle flex items-center gap-1 hover:text-green"
+          >
+            Oferta <img class="w-3 h-3" src="img/arrow-dropdown.svg" alt="" />
+          </a>
+          <ul
+            class="dropdown-menu absolute hidden mt-1 py-2 w-32 bg-white border-transparent rounded shadow-lg"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray hover:text-green"
+                >Link 1</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray hover:text-green"
+                >Link 2</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-gray hover:text-green"
+                >Link 3</a
+              >
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="hover:text-green">O firmie</a>
+        <a href="#" class="hover:text-green">Realizacje</a>
+        <a href="#" class="hover:text-green">Kontakt</a>
+        <div class="flex items-center gap-3 search-container">
+          <input type="text" class="search-input" placeholder="Szukaj..." />
+          <button class="search-button hover:scale-90">
+            <img
+              class="w-6 h-6"
+              src="img/magnifying-glass-icon.svg"
+              alt="Search"
+            ></img>
+          </button>
+        </div>
       </div>
     </nav>
+    <script src="js/script.js"></script>
   </body>
 </html>
