@@ -547,45 +547,12 @@ body {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 976px) {
-  .container {
-    max-width: 976px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
 .absolute {
   position: absolute;
 }
 
 .relative {
   position: relative;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .mt-1 {
@@ -632,6 +599,10 @@ body {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
@@ -654,6 +625,11 @@ body {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.bg-cyan-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(103 232 249 / var(--tw-bg-opacity));
 }
 
 .bg-red-300 {
@@ -687,6 +663,44 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+/* custom padding */
+
+@media (max-width: 480px) {
+  .padding-global {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .padding-global {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 976px) {
+  .padding-global {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+@media (min-width: 977px)  {
+  .padding-global {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+.no-padding-global-right{
+  padding-right: 0;
+}
+
+.page-wrapper{
+  max-width: 2000px;
+}
+
 .search-input {
   width: 0;
   transition: width 0.5s ease-in-out;
@@ -694,16 +708,6 @@ body {
 
 .search-input.active {
   width: 8rem;
-}
-
-.hover\:w-7:hover {
-  width: 1.75rem;
-}
-
-.hover\:scale-50:hover {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-90:hover {
@@ -717,25 +721,15 @@ body {
   background-color: rgb(245 240 236 / var(--tw-bg-opacity));
 }
 
-.hover\:fill-green:hover {
-  fill: #1B5B31;
-}
-
-.hover\:fill-red-100:hover {
-  fill: #fee2e2;
-}
-
 .hover\:text-green:hover {
   --tw-text-opacity: 1;
   color: rgb(27 91 49 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .md\:flex {
+@media (min-width: 976px) {
+  .lg\:flex {
     display: flex;
   }
-
-  .md\:hidden {
-    display: none;
-  }
 }
+
+

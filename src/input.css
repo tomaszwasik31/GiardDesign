@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+/* custom padding */
+@media (max-width: 480px) {
+  .padding-global {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .padding-global {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 976px) {
+  .padding-global {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+@media (min-width: 977px)  {
+  .padding-global {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
+}
+
+.no-padding-global-right{
+  padding-right: 0;
+}
+
+
+.page-wrapper{
+  max-width: 2000px;
+}
+
 @layer base {
   h1,
   h2,
@@ -18,6 +56,7 @@
 }
 
 
+
 .search-input {
   width: 0;
   transition: width 0.5s ease-in-out;
@@ -26,3 +65,5 @@
 .search-input.active {
   width: 8rem; 
 }
+
+
