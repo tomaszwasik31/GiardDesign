@@ -40,6 +40,15 @@
   padding-right: 0;
 }
 
+.padding-global-right-only {
+  padding-left: 0;
+}
+
+.no-padding-global{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* custom grid */
 .custom-grid {
   display: grid;
@@ -115,6 +124,11 @@
   background-color: transparent;
   color: var(--green);
   border: 1px solid var(--green);
+}
+
+.btn-white {
+  border: 1px solid white;
+  color: white;
 }
 
 .btn-third {
