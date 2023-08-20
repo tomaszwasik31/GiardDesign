@@ -6,78 +6,173 @@
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Giard Design</title>
   </head>
-  <body >
-   <div class="">
-    <nav class="grid grid-cols-12 gap-16 padding-global items-center py-6">
-     <img src="img/giarddesign-logo.svg" width="100%" alt="" class="col-span-3">
-      <div class="nav-links-container col-span-9 gap-6 justify-end hidden md:flex">
-        <div class="">
-          <a
-            href="#"
-            class="dropdown-toggle flex items-center gap-1 hover:text-green"
-          >
-            Oferta <img class="w-3 h-3" src="img/arrow-dropdown.svg" alt="" />
-          </a>
-          <ul
-            class="dropdown-menu absolute hidden mt-1 py-2 w-32 bg-white border-transparent rounded shadow-lg"
-          >
-            <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray hover:text-green"
-                >Link 1</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray hover:text-green"
-                >Link 2</a
-              >
-            </li>
-            <li>
-              <a href="#" class="block px-4 py-2 hover:bg-gray hover:text-green"
-                >Link 3</a
-              >
-            </li>
-          </ul>
+  <body>
+    <div class="">
+      <nav class="custom-grid padding-global items-center py-6">
+        <img
+          src="img/giarddesign-logo.svg"
+          width="100%"
+          alt=""
+          class="col-span-3"
+        />
+        <div
+          class="nav-links-container col-span-9 gap-6 justify-end hidden md:flex"
+        >
+          <div class="">
+            <a
+              href="#"
+              class="dropdown-toggle flex items-center gap-1 hover:text-green"
+            >
+              Oferta <img class="w-3 h-3" src="img/arrow-dropdown.svg" alt="" />
+            </a>
+            <ul
+              class="dropdown-menu absolute hidden mt-1 py-2 w-32 bg-white border-transparent rounded shadow-lg"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray hover:text-green"
+                  >Link 1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray hover:text-green"
+                  >Link 2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block px-4 py-2 hover:bg-gray hover:text-green"
+                  >Link 3</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="hover:text-green">O firmie</a>
+          <a href="#" class="hover:text-green">Realizacje</a>
+          <a href="#" class="hover:text-green">Kontakt</a>
+          <div class="flex items-center gap-3 search-container">
+            <input type="text" class="search-input" placeholder="Szukaj..." />
+            <button class="search-button hover:scale-90">
+              <img src="img/magnifying-glass-icon.svg" alt="Search" />
+            </button>
+          </div>
         </div>
-        <a href="#" class="hover:text-green">O firmie</a>
-        <a href="#" class="hover:text-green">Realizacje</a>
-        <a href="#" class="hover:text-green">Kontakt</a>
-        <div class="flex items-center gap-3 search-container">
-          <input type="text" class="search-input" placeholder="Szukaj..." />
-          <button class="search-button hover:scale-90">
+      </nav>
+
+      <main>
+        <section
+          id="hero"
+          class="bg-beige relative custom-grid items-center padding-global padding-global-left-only"
+        >
+          <div
+            class="hero-left-container py-6 lg:py-36 col-span-12 lg:col-span-6"
+          >
+            <div class="hero-text-content max-w-lg">
+              <h1 class="font-medium text-3xl lg:text-6xl">
+                Nowoczesna aranżacja Twojego ogrodu
+              </h1>
+              <p class="py-6 lg:pt-11 lg:pb-20">
+                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+                realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
+                podejściem do każdego projektu.
+              </p>
+              <div
+                class="hero-btn-container flex gap-x-10 gap-y-5 flex-col lg:flex-row"
+              >
+                <button class="btn">Skontaktuj się z nami</button>
+                <button class="btn btn-secondary flex">
+                  Zobacz nasze realizacje
+                  <img src="img/arrow-btn.svg" alt="" class="p-1" />
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hero-right-container h-72 lg:h-full w-full col-span-12 lg:col-span-6"
+          >
             <img
-              class="w-6 h-6"
-              src="img/magnifying-glass-icon.svg"
-              alt="Search"
-            ></img>
-          </button>
-        </div>
-      </div>
-    </nav>
+              src="img/hero-photo-1.webp"
+              alt=""
+              class="object-cover h-full w-full"
+            />
+          </div>
+          <div class="swiper-nav bg-white absolute bottom-0 right-0 flex">
+            <div
+              class="swiper-left pointer- h-24 w-24 flex items-center justify-center cursor-pointer"
+            >
+              <img src="img/arrow-nav.svg" alt="" class="w-8 h-8" />
+            </div>
+            <div
+              class="swiper-right h-24 w-24 flex items-center justify-center cursor-pointer"
+            >
+              <img src="img/arrow-nav.svg" alt="" class="w-8 h-8 rotate-180" />
+            </div>
+          </div>
+        </section>
 
-      <section id="hero" class="bg-beige   relative grid grid-cols-12  items-center padding-global padding-global-left-only">
-        <div class="hero-left-container  py-6 pr-20 lg:py-36 col-span-12 lg:col-span-6 ">
-          <h1 class="font-medium text-3xl lg:text-6xl">Nowoczesna aranżacja Twojego ogrodu </h1>
-          <p class=" py-6 lg:pt-11 lg:pb-20">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
-          <div class="hero-btn-container flex gap-10 flex-col lg:flex-row">
-            <button class="btn">Skontaktuj się z nami</button>
-            <button class="btn btn-secondary">Zobacz nasze realizacje</button>
+        <section id="oferta" class="custom-grid bg-gray padding-global">
+          <div
+            class="oferta-top-container py-24 col-span-11 lg:col-span-7 lg:col-start-2"
+          >
+            <h2 class="text-xs font-normal text-green pl-1">Oferta</h2>
+            <h3 class="text-5xl font-medium pt-4 pb-6">Działamy kompleksowo</h3>
+            <p class="">
+              Oferujemy kompletną obsługę inwestycji terenów zielonych.
+              Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne.
+              Stworzymy dla Ciebie projekt, wizualizujemy go i wcielimy w życie,
+              a na każdym etapie posłużymy radą i wieloletnim doświadczeniem.
+            </p>
           </div>
-        </div>
-        <div class="hero-right-container  h-72 lg:h-full w-full col-span-12 lg:col-span-6">
-          <img src="img/hero-photo-1.webp" alt="" class="object-cover h-full w-full ">
-        </div>
-        <div class="swiper-nav bg-white absolute bottom-0 right-0 flex ">
-          <div class="swiper-left h-24  w-24 flex items-center justify-center">
-            <img src="img/arrow-nav.svg" alt="" class="w-8 h-8 ">
-          </div>
-          <div class="swiper-right h-24  w-24 flex items-center justify-center">
-            <img src="img/arrow-nav.svg" alt="" class="w-8 h-8 rotate-180">
-          </div>
-        </div>
-      </section>
-    
 
-    <script src="js/script.js"></script>
-   </div>
+          <div
+            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-start-1 lg:col-span-4"
+          >
+            <img class="w-10" src="img/pencil-icon.webp" alt="" />
+            <h3 class="text-3xl font-medium pt-8">Projekty</h3>
+            <p class="pt-3">
+              Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+              wykorzystaniem istniejącej przestrzeni.
+            </p>
+            <button class="btn btn-third flex">
+              Dowiedz się więcej
+              <img src="img/arrow-btn.svg" alt="" class="p-1 -rotate-90" />
+            </button>
+          </div>
+          <div
+            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-span-4"
+          >
+            <img class="w-10" src="img/eye-icon.webp" alt="" />
+            <h3 class="text-3xl font-medium pt-8">Wizualizacje</h3>
+            <p class="pt-3">
+              Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.
+            </p>
+            <button class="btn btn-third flex">
+              Dowiedz się więcej
+              <img src="img/arrow-btn.svg" alt="" class="p-1 -rotate-90" />
+            </button>
+          </div>
+          <div
+            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-span-4"
+          >
+            <img class="w-10" src="img/stars-icon.webp" alt="" />
+            <h3 class="text-3xl font-medium pt-8">Realizacje</h3>
+            <p class="pt-3">
+              Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.
+            </p>
+            <button class="btn btn-third flex">
+              Dowiedz się więcej
+              <img src="img/arrow-btn.svg" alt="" class="p-1 -rotate-90" />
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <script src="js/script.js"></script>
+    </div>
   </body>
 </html>

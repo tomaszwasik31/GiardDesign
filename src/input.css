@@ -2,17 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --green: #1b5b31;
+  --grey: #f5f0ec;
+}
+
 /* custom padding */
 @media (max-width: 480px) {
   .padding-global {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-}
-
-:root {
-  --green: #1b5b31;
-  --grey: #f5f0ec;
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -40,6 +40,35 @@
   padding-right: 0;
 }
 
+/* custom grid */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+@media (max-width: 480px) {
+  .custom-grid {
+    gap: 1rem 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .custom-grid {
+    gap: 1rem 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 976px) {
+  .custom-grid {
+    gap: 1rem 3rem;
+  }
+}
+
+@media (min-width: 977px) {
+  .custom-grid {
+    gap: 1rem 4rem;
+  }
+}
 
 @layer base {
   h1,
@@ -63,7 +92,6 @@
 
 .search-input.active {
   width: 6rem;
- 
 }
 
 .btn {
@@ -75,8 +103,8 @@
   color: var(--grey);
   font-size: 1rem;
   transition: ease-in-out 0.3s;
- white-space: nowrap;
- align-self: start;  
+  white-space: nowrap;
+  align-self: start;
 }
 
 .btn:hover {
@@ -89,4 +117,11 @@
   border: 1px solid var(--green);
 }
 
-
+.btn-third {
+  background-color: transparent;
+  color: var(--green);
+  border-radius: 0;
+  border-bottom: 1px solid var(--green);
+  padding: 0;
+  padding-bottom: 0.25rem;
+}
