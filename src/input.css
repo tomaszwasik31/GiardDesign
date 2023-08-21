@@ -44,7 +44,7 @@
   padding-left: 0;
 }
 
-.no-padding-global{
+.no-padding-global {
   padding-left: 0;
   padding-right: 0;
 }
@@ -139,3 +139,18 @@
   padding: 0;
   padding-bottom: 0.25rem;
 }
+.btn-instagram{
+  background-color: white;
+  color: var(--green);
+}
+
+/* gallery */
+#gallery-load-mask{
+  background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+  pointer-events: none;
+}
+
+
+
+
+

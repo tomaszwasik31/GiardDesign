@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Giard Design</title>
+    <script src="js/script.js"></script>
   </head>
   <body>
     <div class="">
@@ -115,7 +116,10 @@
           </div>
         </section>
 
-        <section id="oferta" class="custom-grid bg-gray padding-global pt-24 pb-40">
+        <section
+          id="oferta"
+          class="custom-grid bg-gray padding-global pt-24 pb-40"
+        >
           <div
             class="oferta-top-container pb-24 col-span-11 lg:col-span-7 lg:col-start-2"
           >
@@ -206,9 +210,152 @@
             </button>
           </div>
         </section>
-      </main>
 
-      <script src="js/script.js"></script>
+        <section id="gallery" class="relative bg-beige">
+          <div
+            class="padding-global gallery-top-container pt-8 pb-6 lg:pt-24 lg:pb-12"
+          >
+            <h2 class="text-xs font-normal text-green pl-1">Realizacje</h2>
+            <h3 class="text-5xl font-medium pt-4 pb-6">Nasze projekty</h3>
+          </div>
+          <div
+            data-te-lightbox-init
+            id="gallery-container"
+            class="columns-1 gap-5 lg:gap-8 sm:columns-2 lg:columns-3 xl:columns-4 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8"
+          >
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-1.webp"
+              alt=""
+              data-index="0"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-2.webp"
+              alt=""
+              data-index="1"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-3.webp"
+              alt=""
+              data-index="2"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-4.webp"
+              alt=""
+              data-index="3"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-5.webp"
+              alt=""
+              data-index="4"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-6.webp"
+              alt=""
+              data-index="5"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-7.webp"
+              alt=""
+              data-index="6"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-8.webp"
+              alt=""
+              data-index="7"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-1.webp"
+              alt=""
+              data-index="8"
+            />
+
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-5.webp"
+              alt=""
+              data-index="9"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-2.webp"
+              alt=""
+              data-index="10"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-3.webp"
+              alt=""
+              data-index="11"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-4.webp"
+              alt=""
+              data-index="12"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-5.webp"
+              alt=""
+              data-index="13"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-6.webp"
+              alt=""
+              data-index="14"
+            />
+            <img
+              class="img-gallery cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto"
+              src="img/gallery/Photo-3.webp"
+              alt=""
+              data-index="15"
+            />
+          </div>
+          <div
+            id="gallery-load-mask"
+            class="flex flex-col justify-end h-96 w-full absolute bottom-0"
+          >
+            <button
+              id="load-more-btn"
+              class="btn btn-secondary flex mx-auto pointer-events-auto mb-16"
+            >
+              Zobacz Więcej
+              <img src="img/arrow-btn.svg" alt="" class="p-1" />
+            </button>
+          </div>
+        </section>
+        <section id="cta" class="custom-grid padding-global py-7 lg:py-14 ">
+          <div
+            class="cta-container bg-green gap-y-4 lg:py-32 lg:px-28 py-16 px-14 justify-center items-start flex flex-col col-start-1 col-span-12 md:flex-row md:col-start-2 md:col-span-10"
+          >
+            <div class="cta-left-container">
+              <h3 class="text-white text-4xl">
+                Zostańmy w kontakcie! <br /><b
+                  ><i>Znajdziesz nas na Instagramie.</i>
+                </b>
+              </h3>
+            </div>
+            <div class="cta-right-container flex flex-col gap-4">
+              <p class="text-white">Śledź nasze najnowsze realizacje!</p>
+              <button class="btn btn-instagram">Instagram</button>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+    <script
+      type="text/javascript"
+      src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"
+    ></script>
   </body>
 </html>
