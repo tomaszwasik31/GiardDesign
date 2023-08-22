@@ -787,6 +787,10 @@ body {
   z-index: 999;
 }
 
+.z-\[1\] {
+  z-index: 1;
+}
+
 .order-1 {
   order: 1;
 }
@@ -972,6 +976,10 @@ body {
 
 .mt-\[0\.15rem\] {
   margin-top: 0.15rem;
+}
+
+.-mr-\[100\%\] {
+  margin-right: -100%;
 }
 
 .box-border {
@@ -1364,6 +1372,10 @@ body {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[15\%\] {
+  width: 15%;
 }
 
 .min-w-0 {
@@ -1996,6 +2008,10 @@ body {
 
 .bg-white\/30 {
   background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .bg-clip-padding {
@@ -2740,6 +2756,12 @@ body {
   transition-duration: 150ms;
 }
 
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .delay-\[0ms\] {
   transition-delay: 0ms;
 }
@@ -2774,6 +2796,10 @@ body {
 
 .duration-\[400ms\] {
   transition-duration: 400ms;
+}
+
+.duration-\[600ms\] {
+  transition-duration: 600ms;
 }
 
 .ease-\[cubic-bezier\(0\2c 0\2c 0\.15\2c 1\)\2c _cubic-bezier\(0\2c 0\2c 0\.15\2c 1\)\] {
@@ -3018,6 +3044,21 @@ body {
   content: var(--tw-content);
 }
 
+.after\:clear-both::after {
+  content: var(--tw-content);
+  clear: both;
+}
+
+.after\:block::after {
+  content: var(--tw-content);
+  display: block;
+}
+
+.after\:content-\[\'\'\]::after {
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
 .checked\:before\:opacity-\[0\.16\]:checked::before {
   content: var(--tw-content);
   opacity: 0.16;
@@ -3160,12 +3201,20 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:no-underline:hover {
+  text-decoration-line: none;
+}
+
 .hover\:\!opacity-90:hover {
   opacity: 0.9 !important;
 }
 
 .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.hover\:opacity-90:hover {
+  opacity: 0.9;
 }
 
 .hover\:\!shadow-none:hover {
@@ -3234,8 +3283,16 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.focus\:no-underline:focus {
+  text-decoration-line: none;
+}
+
 .focus\:\!opacity-90:focus {
   opacity: 0.9 !important;
+}
+
+.focus\:opacity-90:focus {
+  opacity: 0.9;
 }
 
 .focus\:shadow-\[0_8px_9px_-4px_rgba\(59\2c 113\2c 202\2c 0\.3\)\2c 0_4px_18px_0_rgba\(59\2c 113\2c 202\2c 0\.2\)\]:focus {

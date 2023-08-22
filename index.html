@@ -60,56 +60,125 @@
       </nav>
 
       <main>
-        <section
-          id="hero"
-          class="bg-beige relative custom-grid items-center padding-global padding-global-left-only"
+        <div
+          id="carouselExampleControls"
+          class="relative"
+          data-te-carousel-init
+          data-te-ride="carousel"
         >
+          <!--Carousel items-->
           <div
-            class="hero-left-container py-6 lg:py-36 col-span-12 lg:col-span-6"
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
           >
-            <div class="hero-text-content max-w-lg">
-              <h1 class="font-medium text-3xl lg:text-6xl">
-                Nowoczesna aranżacja Twojego ogrodu
-              </h1>
-              <p class="py-6 lg:pt-11 lg:pb-20">
-                Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-                realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
-                podejściem do każdego projektu.
-              </p>
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+              data-te-carousel-active
+            >
               <div
-                class="hero-btn-container flex gap-x-8 gap-y-5 flex-col lg:flex-row"
+                class="bg-beige relative custom-grid items-center padding-global padding-global-left-only"
               >
-                <button class="btn">Skontaktuj się z nami</button>
-                <button class="btn btn-secondary flex">
-                  Zobacz nasze realizacje
-                  <img src="img/arrow-btn.svg" alt="" class="p-1" />
-                </button>
+                <div
+                  class="hero-left-container py-6 lg:py-36 col-span-12 lg:col-span-6"
+                >
+                  <div class="hero-text-content max-w-lg">
+                    <h1 class="font-medium text-3xl lg:text-6xl">
+                      Nowoczesna aranżacja Twojego ogrodu
+                    </h1>
+                    <p class="py-6 lg:pt-11 lg:pb-20">
+                      Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                      estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                      indywidualnym podejściem do każdego projektu.
+                    </p>
+                    <div
+                      class="hero-btn-container flex gap-x-8 gap-y-5 flex-col lg:flex-row"
+                    >
+                      <button class="btn">Skontaktuj się z nami</button>
+                      <button class="btn btn-secondary flex">
+                        Zobacz nasze realizacje
+                        <img src="img/arrow-btn.svg" alt="" class="p-1" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="hero-right-container h-72 lg:h-full w-full col-span-12 lg:col-span-6"
+                >
+                  <img
+                    src="img/hero-photo-1.webp"
+                    alt=""
+                    class="object-cover h-full w-full"
+                  />
+                </div>
+              </div>
+            </div>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-te-carousel-item
+            >
+              <div
+                class="bg-beige relative custom-grid items-center padding-global padding-global-left-only"
+              >
+                <div
+                  class="hero-left-container py-6 lg:py-36 col-span-12 lg:col-span-6"
+                >
+                  <div class="hero-text-content max-w-lg">
+                    <h1 class="font-medium text-3xl lg:text-6xl">
+                      Nowoczesna aranżacja Twojego ogrodu
+                    </h1>
+                    <p class="py-6 lg:pt-11 lg:pb-20">
+                      Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                      estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                      indywidualnym podejściem do każdego projektu.
+                    </p>
+                    <div
+                      class="hero-btn-container flex gap-x-8 gap-y-5 flex-col lg:flex-row"
+                    >
+                      <button class="btn">Skontaktuj się z nami</button>
+                      <button class="btn btn-secondary flex">
+                        Zobacz nasze realizacje
+                        <img src="img/arrow-btn.svg" alt="" class="p-1" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="hero-right-container h-72 lg:h-full w-full col-span-12 lg:col-span-6"
+                >
+                  <img
+                    src="img/gallery/Photo-4.webp"
+                    alt=""
+                    class="object-cover h-full w-full"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
-          <div
-            class="hero-right-container h-72 lg:h-full w-full col-span-12 lg:col-span-6"
-          >
-            <img
-              src="img/hero-photo-1.webp"
-              alt=""
-              class="object-cover h-full w-full"
-            />
-          </div>
+          <!--Carousel controls - prev item-->
           <div class="swiper-nav bg-white absolute bottom-0 right-0 flex">
             <div
               class="swiper-left pointer- h-24 w-24 flex items-center justify-center cursor-pointer"
+              type="button"
+              data-te-target="#carouselExampleControls"
+              data-te-slide="prev"
             >
               <img src="img/arrow-nav.svg" alt="" class="w-8 h-8" />
             </div>
             <div
               class="swiper-right h-24 w-24 flex items-center justify-center cursor-pointer"
+              type="button"
+              data-te-target="#carouselExampleControls"
+              data-te-slide="next"
             >
               <img src="img/arrow-nav.svg" alt="" class="w-8 h-8 rotate-180" />
             </div>
           </div>
-        </section>
+        </div>
 
         <section
           id="oferta"
