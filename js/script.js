@@ -32,28 +32,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //  gallery load script
 
-document.addEventListener("DOMContentLoaded", function () {
-  var imagesToShow = 10;
-  var imagesLoaded = imagesToShow;
-  var imageContainer = document.querySelector("#gallery-container");
-  var loadMoreBtn = document.querySelector("#load-more-btn");
-  var loadMoreMask = document.querySelector("#gallery-load-mask");
+document.addEventListener("DOMContentLoaded", () => {
+  const imageContainer = document.querySelector("#gallery-container");
+  const loadMoreBtn = document.querySelector("#load-more-btn");
+  const loadMoreMask = document.querySelector("#gallery-load-mask");
 
-  // Initially hide images beyond the first 9
-  var images = imageContainer.querySelectorAll(".img-gallery");
-  for (var i = imagesToShow; i < images.length; i++) {
-    images[i].style.display = "none";
-    images[i].setAttribute("loading", "lazy"); // Add lazy loading attribute
-  }
+  // Determine how many images to show initially based on screen width
+  let imagesToShow = window.innerWidth < 768 ? 3 : 10;
+  let imagesLoaded = imagesToShow;
+  const images = imageContainer.querySelectorAll(".img-gallery");
 
-  // Handle button click to show more images
-  loadMoreBtn.addEventListener("click", function () {
-    for (var i = imagesLoaded; i < imagesLoaded + imagesToShow; i++) {
+  // Function to toggle image display and lazy loading
+  const toggleImageDisplay = (start, end, display) => {
+    for (let i = start; i < end; i++) {
       if (images[i]) {
-        images[i].style.display = "block";
-        images[i].setAttribute("loading", "lazy"); // Add lazy loading attribute
+        images[i].style.display = display;
+        images[i].setAttribute("loading", "lazy");
       }
     }
+  };
+
+  // Initially hide images beyond the first 'imagesToShow'
+  toggleImageDisplay(imagesToShow, images.length, "none");
+
+  // Handle button click to show more images
+  loadMoreBtn.addEventListener("click", () => {
+    // Show the next batch of images
+    toggleImageDisplay(imagesLoaded, imagesLoaded + imagesToShow, "block");
     imagesLoaded += imagesToShow;
 
     // Hide the "Load More" button if all images are shown
