@@ -12,43 +12,36 @@
       <nav
         class="lg:custom-grid padding-global items-center py-6 flex justify-between"
       >
-        <img src="img/giarddesign-logo.svg" alt="" class="col-span-3 w-24" />
+        <img src="img/giarddesign-logo.svg" alt="" class="col-span-3 w-28" />
         <div
-          class="nav-links-container col-span-9 gap-6 justify-end hidden md:flex"
+          class="nav-links-container col-span-9 gap-6 justify-end hidden md:flex relative"
         >
-          <div class="">
-            <a
-              href="#"
-              class="dropdown-toggle flex items-center gap-1 hover:text-green"
-            >
-              Oferta <img class="w-3 h-3" src="img/arrow-dropdown.svg" alt="" />
-            </a>
-            <ul
-              class="dropdown-menu absolute hidden mt-1 py-2 w-32 bg-white border-transparent rounded shadow-lg"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray hover:text-green"
-                  >Link 1</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray hover:text-green"
-                  >Link 2</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="block px-4 py-2 hover:bg-gray hover:text-green"
-                  >Link 3</a
-                >
-              </li>
-            </ul>
-          </div>
+          <a
+            href="#"
+            class="dropdown-toggle flex items-center gap-1 hover:text-green"
+          >
+            Oferta <img class="w-3 h-3" src="img/arrow-dropdown.svg" alt="" />
+          </a>
+          <ul
+            class="dropdown-menu absolute left-0 top-6 z-10 hidden mt-1 py-2 w-32 bg-white border-transparent rounded shadow-lg"
+          >
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-grey hover:text-green"
+                >Link 1</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-grey hover:text-green"
+                >Link 2</a
+              >
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-grey hover:text-green"
+                >Link 3</a
+              >
+            </li>
+          </ul>
+
           <a href="#" class="hover:text-green">O firmie</a>
           <a href="#" class="hover:text-green">Realizacje</a>
           <a href="#" class="hover:text-green">Kontakt</a>
@@ -84,7 +77,7 @@
                 podejściem do każdego projektu.
               </p>
               <div
-                class="hero-btn-container flex gap-x-10 gap-y-5 flex-col lg:flex-row"
+                class="hero-btn-container flex gap-x-8 gap-y-5 flex-col lg:flex-row"
               >
                 <button class="btn">Skontaktuj się z nami</button>
                 <button class="btn btn-secondary flex">
@@ -136,7 +129,7 @@
           </div>
 
           <div
-            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-start-1 lg:col-span-4"
+            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-start-1 lg:col-span-4 transition-all hover:scale-110 hover:shadow-xl"
           >
             <img class="w-10" src="img/pencil-icon.webp" alt="" />
             <h3 class="text-3xl font-medium pt-8">Projekty</h3>
@@ -150,7 +143,7 @@
             </button>
           </div>
           <div
-            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-span-4"
+            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-span-4 transition-all hover:scale-110 hover:shadow-xl"
           >
             <img class="w-10" src="img/eye-icon.webp" alt="" />
             <h3 class="text-3xl font-medium pt-8">Wizualizacje</h3>
@@ -164,7 +157,7 @@
             </button>
           </div>
           <div
-            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-span-4"
+            class="card px-10 py-12 bg-white rounded-3xl h-96 flex flex-col justify-between col-span-12 lg:col-span-4 transition-all hover:scale-110 hover:shadow-xl"
           >
             <img class="w-10" src="img/stars-icon.webp" alt="" />
             <h3 class="text-3xl font-medium pt-8">Realizacje</h3>
