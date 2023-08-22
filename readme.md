@@ -1,5 +1,7 @@
 # Giard Design - Modern Garden Design Portfolio (AdRespect Recruitment Task)
 
+LIVE LINK: https://tomaszwasik31.github.io/GiardDesign/
+
 Welcome to the Giard Design GitHub repository! This project is part of my recruitment task for AdRespect. The repository showcases the code for the Giard Design website, a portfolio that demonstrates my skills in using HTML, CSS (specifically Tailwind CSS), and JavaScript. While the project is not pixel-perfect, it provides a solid foundation and serves as a good starting point for showcasing my abilities.
 
 ## Project Features
@@ -29,13 +31,3 @@ While the project serves as a starting point, it's important to note that it is 
 ## Contribution
 
 While this project serves as a recruitment task for AdRespect, your feedback is invaluable! If you notice any improvements or have suggestions, please feel free to contribute by submitting a pull request.
-
-## License
-
-The code is distributed under the [MIT License](LICENSE), allowing usage, modification, and distribution.
-
-## About Giard Design
-
-Giard Design is a visionary garden design and landscaping company, committed to crafting contemporary outdoor spaces. Our team of skilled designers and architects collaborates with clients to realize garden dreams.
-
-Please visit the [Giard Design website](https://www.example.com) to learn more about our services and explore the portfolio.
