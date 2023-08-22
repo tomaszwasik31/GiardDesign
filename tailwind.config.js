@@ -1,8 +1,6 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "'./*.html'",
-    "./node_modules/tw-elements/dist/js/**/*.js",
-  ],
+  content: ["./*html", "./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
     screens: {
       sm: "480px",
@@ -10,16 +8,15 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {
-      colors: {
-        beige: "#DCC1AB",
-        black: "#111111",
-        green: "#1B5B31",
-        gray: "#F5F0EC",
-      },
+    colors: {
+      beige: "#DCC1AB",
+      black: "#111111",
+      green: "#1B5B31",
+      grey: "#F5F0EC",
+      white: "#FFF"
     },
-  },
 
-  plugins: [require("tw-elements/dist/plugin.cjs")],
-  darkMode: "class",
+    plugins: [require("tw-elements/dist/plugin.cjs")],
+    darkMode: "class",
+  },
 };
